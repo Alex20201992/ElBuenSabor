@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.carrito.ListarCarritoFragment">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:background="#D1D1D1"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:text="PRODUCTOS EN EL CARRITO:"
+                android:textColor="#232323"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="260dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerCarrito"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="4dp">
+
+                    </androidx.recyclerview.widget.RecyclerView>
+                </LinearLayout>
+            </ScrollView>
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:background="#D1D1D1"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:text="RESUMEN DE PEDIDO:"
+                android:textColor="#232323"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_margin="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:visibility="visible"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp"
+                app:cardMaxElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="SELECCIONE  UN  MEDIO  DE PAGO :"
+                        android:textColor="#3F51B5"
+                        android:textStyle="bold" />
+
+                    <RadioGroup
+                        android:id="@+id/rbtGrupoMedioPago"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RadioButton
+                            android:id="@+id/rbtVisa"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:checked="true"
+                            android:drawableLeft="@drawable/ic_visa" />
+
+                        <RadioButton
+                            android:id="@+id/rbtMastercard"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:drawableLeft="@drawable/ic_mastercard" />
+
+                        <RadioButton
+                            android:id="@+id/rbtEfectivo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:text="EFECTIVO  CON  CAMBIO DE:" />
+
+                        <EditText
+                            android:id="@+id/edtEfectivo"
+                            android:layout_width="105dp"
+                            android:layout_height="36dp"
+                            android:layout_gravity="right"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="-38dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/design_rectangle"
+                            android:ems="10"
+                            android:inputType="number"
+                            android:maxLength="100"
+                            android:text="0"
+                            android:visibility="gone" />
+
+                    </RadioGroup>
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="INGRESE LA  DIRECCIÓN DE ENVÍO :"
+                        android:textColor="#3F51B5"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/edtDireccionEnvio"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/design_rectangle"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:maxLength="100"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textView21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="OBSERVACIÓN DE ENVÍO (opcional):"
+                        android:textColor="#3F51B5"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/edtObservacion"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/design_rectangle"
+                        android:ems="10"
+                        android:hint="Ejemplo:  por favor traer la  gaseosa sin helar; "
+                        android:inputType="textMultiLine"
+                        android:maxLength="100"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvPrecioTotalCarrito"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/design_rectangle"
+                    android:gravity="center"
+                    android:text="S/. 12.00"
+                    android:textColor="#162681"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnProcesarCompra"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/design_button_red"
+                    android:text="PROCESAR"
+                    android:textColor="@android:color/background_light" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

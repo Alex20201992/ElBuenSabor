@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.gallery.GalleryFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context=".MainActivity"
+        tools:layout_editor_absoluteX="10dp"
+        tools:layout_editor_absoluteY="10dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="25dp"
+            android:gravity="center"
+            android:text="AGREGAR PRODUCTO"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="INGRESA EL NOMBRE DEL PRODUCTO:" />
+
+        <EditText
+            android:id="@+id/edtProducto"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:background="@drawable/design_rectangle"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="INGRESA  EL  PRECIO  DEL PRODUCTO:" />
+
+        <EditText
+            android:id="@+id/edtPrecio"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:background="@drawable/design_rectangle"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="INGRESE   UNA   BREVE  DESCRIPCIÓN:" />
+
+        <EditText
+            android:id="@+id/editTextTextMultiLine"
+            android:layout_width="match_parent"
+            android:layout_height="169dp"
+            android:background="@drawable/design_rectangle"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AGREGE UNA  IMAGEN  REFERENCIAL:" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/design_rectangle_gray"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/ic_anadir" />
+
+        <Button
+            android:id="@+id/btnSubir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/design_button"
+            android:text="Subir Imagen"
+            android:textColor="@android:color/background_light" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">ElBuenSabor</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_dashboard_informativo">Dashboard Informativo</string>
+    <string name="menu_productos">Gestión de Productos</string>
+    <string name="menu_Carta">Carta de Menú</string>
+    <string name="menu_cerrar_sesion">Cerrar Sesión</string>
+    <string name="menu_recepcion_pedidos">Recepción de Pedidos</string>
+    <string name="menu_agregar_producto">Agregar Producto</string>
+    <string name="nav_carrito_compra">Carrito de Compras</string>
+    <string name="nav_detalle_producto">Detalle del Producto</string>
+    <string name="menu_historial_pedidos">Historial de Pedidos</string>
+    <string name="nav_pedido_cliente_detalle">Detalle del Pedido</string>
+    <string name="menu_registrar_empleado">Registrar Empleado</string>
+    <string name="nav_modulo_repartidor">Modulo Repartidor</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

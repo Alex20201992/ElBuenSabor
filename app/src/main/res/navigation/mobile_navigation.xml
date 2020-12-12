@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_dashboard_informativo">
+
+    <fragment
+        android:id="@+id/nav_dashboard_informativo"
+        android:name="com.example.elbuensabor.ui.home.HomeFragment"
+        android:label="@string/menu_dashboard_informativo"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/nav_productos"
+        android:name="com.example.elbuensabor.ui.productos.ProductosFragment"
+        android:label="@string/menu_productos"
+        tools:layout="@layout/fragment_productos" >
+        <action
+            android:id="@+id/action_nav_productos_to_nav_agregarProducto"
+            app:destination="@id/nav_agregarProducto" />
+        <action
+            android:id="@+id/action_nav_productos_to_nav_editarProducto"
+            app:destination="@id/nav_editarProducto" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_carta"
+        android:name="com.example.elbuensabor.ui.gallery.GalleryFragment"
+        android:label="@string/menu_Carta"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/SlideshowFragment"
+        android:name="com.example.elbuensabor.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_recepcion_pedidos"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/nav_agregarProducto"
+        android:name="com.example.elbuensabor.ui.productos.AgregarProductoFragment"
+        android:label="@string/menu_agregar_producto"
+        tools:layout="@layout/fragment_agregar_producto" />
+
+    <fragment
+        android:id="@+id/nav_editarProducto"
+        android:name="com.example.elbuensabor.ui.productos.EditarProductoFragment"
+        android:label="@string/menu_agregar_producto"
+        tools:layout="@layout/fragment_editar_producto" />
+    <fragment
+        android:id="@+id/nav_dashboard_carta"
+        android:name="com.example.elbuensabor.ui.carta.DashboardCartaFragment"
+        android:label="@string/menu_Carta"
+        tools:layout="@layout/fragment_dashboard_carta" >
+        <action
+            android:id="@+id/action_nav_dashboard_carta_to_nav_listar_carta"
+            app:destination="@id/nav_listar_carta" />
+        <action
+            android:id="@+id/action_nav_dashboard_carta_to_nav_carrito_mensaje2"
+            app:destination="@id/nav_carrito_mensaje" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_listar_carta"
+        android:name="com.example.elbuensabor.ui.carta.ListarCartaFragment"
+        android:label="@string/menu_Carta"
+        tools:layout="@layout/fragment_listar_carta" >
+        <action
+            android:id="@+id/action_nav_listar_carta_to_nav_agregar_carta"
+            app:destination="@id/nav_agregar_carta" />
+        <action
+            android:id="@+id/action_nav_listar_carta_to_nav_detalle_carta"
+            app:destination="@id/nav_detalle_carta" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_agregar_carta"
+        android:name="com.example.elbuensabor.ui.carta.AgregarCartaFragment"
+        android:label="@string/menu_Carta"
+        tools:layout="@layout/fragment_agregar_carta" />
+    <fragment
+        android:id="@+id/nav_detalle_carta"
+        android:name="com.example.elbuensabor.ui.carta.DetalleCartaProductoFragment"
+        android:label="@string/nav_detalle_producto"
+        tools:layout="@layout/fragment_detalle_carta_producto" />
+    <fragment
+        android:id="@+id/nav_listar_carrito"
+        android:name="com.example.elbuensabor.ui.carrito.ListarCarritoFragment"
+        android:label="@string/nav_carrito_compra"
+        tools:layout="@layout/fragment_listar_carrito" />
+    <fragment
+        android:id="@+id/nav_historial_pedidos"
+        android:name="com.example.elbuensabor.ui.pedidos.HistorialPedidosFragment"
+        android:label="@string/menu_historial_pedidos"
+        tools:layout="@layout/fragment_historial_pedidos" />
+    <fragment
+        android:id="@+id/nav_carrito_mensaje"
+        android:name="com.example.elbuensabor.ui.carrito.MensajeFragment"
+        android:label="@string/nav_carrito_compra"
+        tools:layout="@layout/fragment_mensaje" />
+    <fragment
+        android:id="@+id/nav_recepcion_pedidos"
+        android:name="com.example.elbuensabor.ui.pedidos.PedidosClientesFragment"
+        android:label="@string/menu_recepcion_pedidos"
+        tools:layout="@layout/fragment_pedidos_clientes" />
+    <fragment
+        android:id="@+id/nav_pedido_cliente_detalle"
+        android:name="com.example.elbuensabor.ui.pedidos.PedidosClientesDetalleFragment"
+        android:label="@string/nav_pedido_cliente_detalle"
+        tools:layout="@layout/fragment_pedidos_clientes_detalle" />
+    <fragment
+        android:id="@+id/nav_historialPedidoDetalle"
+        android:name="com.example.elbuensabor.ui.pedidos.HistorialPedidoDetalleFragment"
+        android:label="@string/nav_pedido_cliente_detalle"
+        tools:layout="@layout/fragment_historial_pedido_detalle" />
+    <fragment
+        android:id="@+id/nav_modulo_repartidor"
+        android:name="com.example.elbuensabor.ui.repartidor.RepartidorPedidoFragment"
+        android:label="@string/nav_modulo_repartidor"
+        tools:layout="@layout/fragment_repartidor_pedido" />
+    <fragment
+        android:id="@+id/nav_pedido_repartidor_detalle"
+        android:name="com.example.elbuensabor.ui.repartidor.RepartidorPedidoDetalleFragment"
+        android:label="@string/nav_pedido_cliente_detalle"
+        tools:layout="@layout/fragment_repartidor_pedido_detalle" />
+    <activity
+        android:id="@+id/nav_cerrar_sesion"
+        android:name="com.example.elbuensabor.activities.LoginActivity"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" />
+    <activity
+        android:id="@+id/nav_registrar_empleado"
+        android:name="com.example.elbuensabor.activities.RegistrarEmpleadoActivity"
+        android:label="activity_registro"
+        tools:layout="@layout/activity_registrar_empleado" />
+</navigation>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.carrito.MensajeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvMensajeTitulo"
+            android:layout_width="322dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="El pedido se ha enviado Exitosamente"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvMensajeDescripcion"
+            android:layout_width="269dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="Hola, hemos recibido tu pedido con éxito. Ingresa al historial del pedidos para revisar su progeso de entrega"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+</FrameLayout>

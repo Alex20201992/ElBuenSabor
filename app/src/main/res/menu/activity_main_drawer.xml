@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dashboard_informativo"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_dashboard_informativo" />
+        <item
+            android:id="@+id/nav_productos"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_productos" />
+        <item
+            android:id="@+id/nav_dashboard_carta"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_Carta" />
+        <item
+            android:id="@+id/nav_registrar_empleado"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_registrar_empleado" />
+        <item
+            android:id="@+id/nav_recepcion_pedidos"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_recepcion_pedidos" />
+        <item
+            android:id="@+id/nav_historial_pedidos"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_historial_pedidos" />
+        <item
+            android:id="@+id/nav_modulo_repartidor"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/nav_modulo_repartidor" />
+        <item
+            android:id="@+id/nav_cerrar_sesion"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="@string/menu_cerrar_sesion" />
+    </group>
+</menu>
